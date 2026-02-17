@@ -1,0 +1,130 @@
+site_name: Threat Matrix for Cloud Web Applications
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+  logo: assets/Microsoft.png
+  favicon: assets/mdc.png
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.top
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - def_list
+extra_css:
+  - stylesheets/extra.css
+nav:
+  - Tactics: 
+    - 'index.md'
+    - Resource Development:
+      - 'tactics/ResourceDevelopment/index.md'
+      - Subdomain takeover: 'techniques/Subdomain takeover.md'
+    - Initial Access:
+      - 'tactics/InitialAccess/index.md'
+      - Application vulnerability: 'techniques/Application vulnerability.md'
+      - Code injection in connected repository: 'techniques/Code injection in connected repository.md'
+      - Compromised image in registry: 'techniques/Compromised image in registry.md'
+      - Exposed/misconfigured admin interfaces: 'techniques/Exposed misconfigured admin interfaces.md'
+      - Serverless trigger injection: 'techniques/Serverless trigger injection.md'
+      - Using deployment credentials: 'techniques/Using deployment credentials.md'
+      - Valid cloud accounts: 'techniques/Valid cloud accounts.md'
+    - Execution:
+      - 'tactics/Execution/index.md'
+      - Application exploit (RCE): 'techniques/Application exploit (RCE).md'
+      - Cloud native terminal: 'techniques/Cloud native terminal.md'
+      - Development slots: 'techniques/Development slots.md'
+      - Site extensions: 'techniques/Site extensions.md'
+    - Persistence:
+      - 'tactics/Persistence/index.md'
+      - Cron jobs: 'techniques/Cron jobs.md'
+      - Source code modification: 'techniques/Source code modification.md'
+      - Valid cloud accounts: 'techniques/Valid cloud accounts.md'
+    - Privilege Escalation:
+      - 'tactics/PrivilegeEscalation/index.md'
+      - Access cloud resources: 'techniques/Access cloud resources.md'
+      - Access workload identity credentials: 'techniques/Access workload identity credentials.md'
+    - Defense Evasion:
+      - 'tactics/DefenseEvasion/index.md'
+      - Development slots: 'techniques/Development slots.md'
+      - Disable cloud logging: 'techniques/Disable cloud logging.md'
+    - Credential Access:
+      - 'tactics/CredentialAccess/index.md'
+      - Access workload identity credentials: 'techniques/Access workload identity credentials.md'
+      - Brute force: 'techniques/Brute force.md'
+      - Cloud credentials in runtime environment: 'techniques/Cloud credentials in runtime environment.md'
+    - Discovery:
+      - 'tactics/Discovery/index.md'
+      - Access to connected cloud storage: 'techniques/Access to connected cloud storage.md'
+      - Cloud service discovery: 'techniques/Cloud service discovery.md'
+      - Instance metadata API: 'techniques/Instance metadata API.md'
+    - Lateral Movement:
+      - 'tactics/LateralMovement/index.md'
+      - Access cloud resources: 'techniques/Access cloud resources.md'
+      - Connector reuse: 'techniques/Connector reuse.md'
+      - Server side request forgery (SSRF): 'techniques/Server side request forgery (SSRF).md'
+    - Collection:
+      - 'tactics/Collection/index.md'
+      - Access application database: 'techniques/Access application database.md'
+      - Event data capture: 'techniques/Event data capture.md'
+    - Impact:
+      - 'tactics/Impact/index.md'
+      - Data destruction: 'techniques/Data destruction.md'
+      - Data theft: 'techniques/Data theft.md'
+      - Defacement: 'techniques/Defacement.md'
+      - Denial of wallet: 'techniques/Denial of wallet.md'
+      - Resource hijacking: 'techniques/Resource hijacking.md'
+  - Mitigations: 
+    - 'mitigations/index.md'
+    - Avoid logging sensitive data: 'mitigations/Avoid logging sensitive data.md'
+    - Centralize logs to protected accounts: 'mitigations/Centralize logs to protected accounts.md'
+    - Configure cost guardrails and spending alerts: 'mitigations/Configure cost guardrails and spending alerts.md'
+    - Deploy a web application firewall (WAF): 'mitigations/Deploy a web application firewall (WAF).md'
+    - Disable basic authentication: 'mitigations/Disable basic authentication.md'
+    - Disable legacy metadata endpoints: 'mitigations/Disable legacy metadata endpoints.md'
+    - Enable versioning and recovery mechanisms: 'mitigations/Enable versioning and recovery mechanisms.md'
+    - Enforce code review and approval workflows: 'mitigations/Enforce code review and approval workflows.md'
+    - Enforce credential rotation policies: 'mitigations/Enforce credential rotation policies.md'
+    - Enforce input validation and sanitization: 'mitigations/Enforce input validation and sanitization.md'
+    - Enforce multi-factor authentication (MFA): 'mitigations/Enforce multi-factor authentication (MFA).md'
+    - Enforce strong password policies: 'mitigations/Enforce strong password policies.md'
+    - Follow secure coding practices: 'mitigations/Follow secure coding practices.md'
+    - Implement application security testing: 'mitigations/Implement application security testing.md'
+    - Implement backup and recovery plans: 'mitigations/Implement backup and recovery plans.md'
+    - Implement domain ownership verification: 'mitigations/Implement domain ownership verification.md'
+    - Implement least-privilege access: 'mitigations/Implement least-privilege access.md'
+    - Implement rate limiting: 'mitigations/Implement rate limiting.md'
+    - Implement resource quotas and concurrency limits: 'mitigations/Implement resource quotas and concurrency limits.md'
+    - Implement role-based access control (RBAC): 'mitigations/Implement role-based access control (RBAC).md'
+    - Image assurance policy: 'mitigations/Image assurance policy.md'
+    - Install trusted extensions only: 'mitigations/Install trusted extensions only.md'
+    - Maintain up-to-date dependencies: 'mitigations/Maintain up-to-date dependencies.md'
+    - Remove DNS records on resource deletion: 'mitigations/Remove DNS records on resource deletion.md'
+    - Require approval for promotions: 'mitigations/Require approval for promotions.md'
+    - Require session-based metadata access: 'mitigations/Require session-based metadata access.md'
+    - Require signed commits: 'mitigations/Require signed commits.md'
+    - Restrict access to configuration endpoints: 'mitigations/Restrict access to configuration endpoints.md'
+    - Restrict access to event sources: 'mitigations/Restrict access to event sources.md'
+    - Restrict access to metadata services: 'mitigations/Restrict access to metadata services.md'
+    - Restrict delete and write permissions: 'mitigations/Restrict delete and write permissions.md'
+    - Restrict deployment permissions: 'mitigations/Restrict deployment permissions.md'
+    - Restrict logging configuration permissions: 'mitigations/Restrict logging configuration permissions.md'
+    - Restrict network access to sensitive services: 'mitigations/Restrict network access to sensitive services.md'
+    - Restrict outbound network access: 'mitigations/Restrict outbound network access.md'
+    - Restrict environment management permissions: 'mitigations/Restrict environment management permissions.md'
+    - Restrict write access to code repositories: 'mitigations/Restrict write access to code repositories.md'
+    - Secure CI/CD pipelines: 'mitigations/Secure CI CD pipelines.md'
+    - Use compute reservations: 'mitigations/Use compute reservations.md'
+    - Use conditional access policies: 'mitigations/Use conditional access policies.md'
+    - Use workload identities instead of static credentials: 'mitigations/Use workload identities instead of static credentials.md'
+    - Use parameterized queries: 'mitigations/Use parameterized queries.md'
+    - Use private networking for service communication: 'mitigations/Use private networking for service communication.md'
+    - Use randomized service endpoints: 'mitigations/Use randomized service endpoints.md'
+    - Use secrets management solutions: 'mitigations/Use secrets management solutions.md'
+  - About: 'about.md'
