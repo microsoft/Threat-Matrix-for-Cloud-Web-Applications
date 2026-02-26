@@ -12,6 +12,7 @@ hide:
     MITRE technique: 
 
 In cases where the application executes backend workflows in response to event-driven triggers, an end user who can directly or indirectly influence those triggers may cause unintended activity within the application. By manipulating inputs such as crafted file uploads, queue messages, API calls, or other event sources, an attacker can force serverless functions to run with their supplied data, which could lead to unintended code execution, data access, or further compromise.
+For example, an attacker might upload a modified image file containing a crafted payload through a legitimate web form. The image is then stored in an S3 bucket, which triggers an AWS Lambda function configured to process new uploads. If the function handles the file without proper validation, the attacker's payload could cause unintended behavior or even lead to remote code execution.
 
 ## Mitigations
 

@@ -11,7 +11,7 @@ hide:
     Tactic: [Persistence](../tactics/Persistence/index.md)<br>
     MITRE technique: 
 
-Cloud-based application code is often loaded from a git repository, cloud storage or external registries. If an attacker can modify this code, they may deploy changes that will run every time the application is restarting or handling a request, possibly blending with the normal behavior of the application.
+An attacker with access to a development environment may be able to modify the application's source - which could reside in a git repository, a container image in a registry, or a deployment package in cloud storage. Because cloud web applications are typically deployed through automated pipelines, a single modification can propagate automatically into production, causing the attacker's code to run every time the application restarts. These changes become part of the application's canonical source, meaning that even if the runtime environment is rebuilt or scaled, the tainted code is redeployed from the same trusted source, maintaining the attacker's access to the application.
 
 ## Mitigations
 

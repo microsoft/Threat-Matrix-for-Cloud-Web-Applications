@@ -11,7 +11,7 @@ hide:
     Tactic: [Defense Evasion](../tactics/DefenseEvasion/index.md)<br>
     MITRE technique: [T1562.008](https://attack.mitre.org/techniques/T1562/008/)
 
-Attackers with appropriate permissions may disable or alter cloud logging to hide their actions and avoid detection.
+Attackers with appropriate permissions may disable or alter cloud logging to hide their actions and avoid detection. This can include turning off diagnostic logging on a web application, deleting or modifying existing log data, changing log retention policies to accelerate log expiration, or redirecting log output. By suppressing logging, the attacker reduces the visibility that defenders have into ongoing malicious activity, making it harder to detect the compromise, perform incident response, or reconstruct the attack timeline.
 
 ## Mitigations
 

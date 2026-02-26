@@ -18,4 +18,4 @@ Some cloud web applications are deployed from a container image pulled from priv
 |ID|Mitigation|Description|
 |--|----------|-----------|
 |[MS-M7008](../mitigations/Secure%20CI%20CD%20pipelines.md)|Secure CI/CD pipelines|Placing gates in the CI/CD process can block pushing unsecured code to container images.|
-|[MS-M7010](../mitigations/Image%20assurance%20policy.md)|Image assurance policy|Ensure that only images that passed the security compliance policies are pushed to registries and deployed.|
+|[MS-M7010](../mitigations/Image%20assurance%20policy.md)|Image assurance policy|Ensure that only images that passed the security compliance policies are pushed to registries and deployed to Kubernetes clusters.|

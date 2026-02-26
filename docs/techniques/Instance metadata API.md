@@ -11,7 +11,7 @@ hide:
     Tactic: [Discovery](../tactics/Discovery/index.md)<br>
     MITRE technique: [T1526](https://attack.mitre.org/techniques/T1526/)
 
-Cloud platforms expose metadata services that provide information about the running environment, such as instance details, network configuration, and identity credentials. In some cases, this service is available from within cloud web application as well. Attackers who gain access to such application may query the metadata API service for getting information about the underlying VM and the application environment.
+Cloud platforms expose metadata services that provide information about the running environment, such as instance details, network configuration, and identity credentials. In some cases, this service is available from within cloud web applications as well. Attackers who gain access to such application may query the metadata API service for getting information about the underlying VM and the application environment.
 
 ## Mitigations
 

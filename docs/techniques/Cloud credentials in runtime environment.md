@@ -13,6 +13,8 @@ hide:
 
 Some web applications store secrets such as keys, tokens, and connection strings in environment variables or configuration files. In cloud environments, those secrets are often used to access additional cloud services within the environment. If an attacker gains access, even read-only, to the running application environment, they would be able to retrieve those credentials and use them to authenticate against those external cloud resources.
 
+For example, if an attacker gains access to the environment variables of an Azure Function with an integrated Azure OpenAI resource, they could extract the endpoint and key of the AI resource from those variables, which grants them full access to the Azure OpenAI service's API for this resource.
+
 ## Mitigations
 
 |ID|Mitigation|Description|

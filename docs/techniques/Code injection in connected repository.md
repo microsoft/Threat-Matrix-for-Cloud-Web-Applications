@@ -12,6 +12,7 @@ hide:
     MITRE technique: [T1195.002](https://attack.mitre.org/techniques/T1195/002/)
 
 Attackers may inject malicious code into source repositories that are linked to cloud web applications or serverless functions. If these repositories are automatically synced with production environments, the injected code executes under the legitimate workflows.
+For example, if an attacker is able to commit malicious code into GitHub repository connected to GCP Cloud Functions via Cloud Build triggers, their code will be deployed into the application.
 
 ## Mitigations
 

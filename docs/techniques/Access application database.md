@@ -9,7 +9,7 @@ hide:
 !!! info inline end
     ID: MS-TA7025<br>
     Tactic: [Collection](../tactics/Collection/index.md)<br>
-    MITRE technique: [T1210](https://attack.mitre.org/techniques/T1210/)
+    MITRE technique: [T1213](https://attack.mitre.org/techniques/T1213/)
 
 Many applications rely on a connected database to store application data, user information, configuration values, or state. The application often connects to the database by using the application cloud identity, or by using a hardcoded connection string. If an attacker gains code execution abilities, they can interact with the database - query and extract data or modify entries. In cases where the database is accessible from the internet, attacker may only need read permissions over the web app to access the database.
 

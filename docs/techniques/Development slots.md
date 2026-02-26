@@ -11,10 +11,8 @@ hide:
     Tactic: [Execution](../tactics/Execution/index.md), [Defense Evasion](../tactics/DefenseEvasion/index.md)<br>
     MITRE technique: 
 
-Many cloud platforms and serverless environments support staging or preview environments (such as deployment slots, versions, or aliases), which allow developers to test and stage new versions of their applications before swapping them into production. These environments can be swapped or promoted with minimal downtime. If an attacker gains the ability to modify or promote a non-production environment, they may execute malicious code or gain insights into the application's structure and behavior.
-
+Many cloud platforms and serverless environments support staging or preview environments (such as deployment slots in Azure App Services, aliases in AWS Lambda, or revision tags in GCP Cloud Run), which allow developers to test and stage new versions of their applications before swapping them into production. These environments can be swapped or promoted with minimal downtime. If an attacker gains the ability to modify or promote a non-production environment, they may execute malicious code or gain insights into the application's structure and behavior.
 In some cases, these staged environments are directly accessible without a swap, meaning an attacker could execute code in a staging slot or alternate version and potentially evade detection, since the primary production deployment remains untouched.
-
 For example, in Azure App Service, an attacker who compromises a staging deployment slot could either swap it into production, thus pushing malicious code live, or exploit the slot's separate URL to run the malicious app without modifying the production's code.
 
 ## Mitigations

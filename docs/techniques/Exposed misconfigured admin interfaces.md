@@ -12,6 +12,7 @@ hide:
     MITRE technique: 
 
 Some cloud-based web applications expose administrative interfaces for managing deployments, configurations, or runtime operations. If these interfaces are exposed to the internet or misconfigured, attackers might be able to access them and view critical data, execute commands, or manipulate application behavior.
+For example, if an Azure App Service exposes its Kudu interface to the internet, an attacker with sufficient credentials could execute commands in the app's environment.
 
 ## Mitigations
 

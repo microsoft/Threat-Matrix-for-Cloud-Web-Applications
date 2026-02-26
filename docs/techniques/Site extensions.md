@@ -11,7 +11,8 @@ hide:
     Tactic: [Execution](../tactics/Execution/index.md)<br>
     MITRE technique: 
 
-Site extensions are an Azure App Services feature that allows users to install additional tools onto the web application. Installing unfamiliar extensions could result in malicious code running in the web app.
+Site extensions are an Azure App Services feature that allows users to install additional tools and utilities onto their web application. These extensions run within the context of the App Service and have the same permissions as the application itself - including requests data, file system access and environment variables.
+The extensions are installed from a public NuGet-based feed, to which anyone can upload to. If an attacker publishes a malicious extension with a name similar to a legitimate one (typosquatting) or compromises an existing extension package, unsuspecting users may install it, causing malicious code to run in their application.
 
 ## Mitigations
 
