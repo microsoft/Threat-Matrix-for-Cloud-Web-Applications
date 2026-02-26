@@ -12,6 +12,7 @@ hide:
     MITRE technique: [T1110](https://attack.mitre.org/techniques/T1110/)
 
 Some web applications or interfaces may still use basic authentication, either for user access, administrative functions, or deployment interfaces. An attacker could try to gain access by repeatedly attempting credentials combinations, and upon finding valid credentials, use them to access and use the relevant privileges.
+
 For example, Azure App Service exposes the Kudu management console (the SCM site) and FTP endpoints that support basic authentication. This includes user‑scoped deployment credentials, which are manually set by the user and shared across all App Services within a subscription that the user has access to. If an attacker is able to successfully guess those credentials, they could gain deployment access to multiple applications in the subscription.
 
 ## Mitigations

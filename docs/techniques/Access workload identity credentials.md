@@ -12,6 +12,7 @@ hide:
     MITRE technique: [T1552.005](https://attack.mitre.org/techniques/T1552/005/)
 
 Workload identities are identities that are managed by the cloud provider and can be allocated to cloud resources. The identity's secret is fully managed by the cloud provider, which eliminates the need to manage the credentials. Web apps can use workload identities to perform actions on other cloud resources by querying IMDS (or similar endpoints). Attackers who gain access to a web app can leverage their access to the IMDS endpoint to get the workload identity's token. With a token, the attackers can access cloud resources.
+
 For example, in Azure App Services, the managed identity access token can be acquired through a local identity endpoint, which is defined in the environment variables (IDENTITY_ENDPOINT). If an attacker is able to execute code on such App Service instance, they would be able to query the endpoint and receive an access token to other Azure resources with the managed identity permissions.
 
 ## Mitigations

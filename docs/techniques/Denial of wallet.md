@@ -11,7 +11,8 @@ hide:
     Tactic: [Impact](../tactics/Impact/index.md)<br>
     MITRE technique: 
 
-Cloud applications often scale dynamically based on demand, incurring costs for compute, storage, and data transfer. Attackers may intentionally trigger operations that will cause those resources to scale out to impose financial damage. For example, attackers can flood a web application with requests, similarly to traditional denial-of-service (DoS) attacks. This will cause the application to allocate more resources, thus causing increased charges.
+Cloud applications often scale dynamically based on demand, incurring costs for compute, storage, and data transfer. Attackers may intentionally trigger operations that will cause those resources to scale out to impose financial damage. ONe such approach is to flood a web application with requests, similarly to traditional denial-of-service (DoS) attacks. This will cause the application to allocate more resources, thus causing increased charges.
+
 For example, an attacker could repeatedly invoke a Cloud Function with high memory allocation, leading to inflated billing due to excessive execution time.
 
 ## Mitigations

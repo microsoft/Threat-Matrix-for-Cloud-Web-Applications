@@ -12,6 +12,7 @@ hide:
     MITRE technique: [T1059](https://attack.mitre.org/techniques/T1059/)
 
 Some cloud platforms provide built-in administrative consoles or SSH-style terminals for running commands directly inside the application's execution environment. Attackers who gain access to the terminal will be able to extract data, edit the web app files and execute commands.
+
 For example, Azure App Services expose a Kudu console that acts as a built-in terminal; if attackers obtain deployment credentials, they can use it to browse files, execute commands, and tamper with application code.
 
 ## Mitigations

@@ -11,7 +11,8 @@ hide:
     Tactic: [Initial Access](../tactics/InitialAccess/index.md), [Persistence](../tactics/Persistence/index.md)<br>
     MITRE technique: [T1078.004](https://attack.mitre.org/techniques/T1078/004/)
 
-Adversaries may gain access to cloud web applications and serverless environments by leveraging compromised valid cloud accounts. Using legitimate credentials allows attackers to interact with such services without raising suspicion. This enables them to deploy or modify application code, configure triggers, and maintain control over workloads. 
+Adversaries may gain access to cloud web applications and serverless environments by leveraging compromised valid cloud accounts. Using legitimate credentials allows attackers to interact with such services without raising suspicion. This enables them to deploy or modify application code, configure triggers, and maintain control over workloads.
+
 For example, if an attacker gains control over an Entra ID user with owner permissions over a subscription, they would be able to read and modify any function that reside in the subscription. 
 
 ## Mitigations
