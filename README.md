@@ -2,7 +2,7 @@
 
 Microsoft Defender for Cloud threat matrix for cloud web applications contains attack tactics, techniques and mitigations relevant for cloud web applications environment. 
 
-The threat matrix is best viewed online via: [https://microsoft.github.io/Threat-Matrix-for-Cloud-Web-Applications](https://microsoft.github.io/Threat-Matrix-for-Cloud-Web-Applications)
+The threat matrix is best viewed online via: [https://aka.ms/CloudWebAppsThreatMatrix](https://aka.ms/CloudWebAppsThreatMatrix)
 
 [![build doc pages](https://github.com/microsoft/Threat-Matrix-for-Cloud-Web-Applications/actions/workflows/main.yml/badge.svg)](https://github.com/microsoft/Threat-Matrix-for-Cloud-Web-Applications/actions/workflows/main.yml)
 [![pages-build-deployment](https://github.com/microsoft/Threat-Matrix-for-Cloud-Web-Applications/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/microsoft/Threat-Matrix-for-Cloud-Web-Applications/actions/workflows/pages/pages-build-deployment)
